@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;StringStack&apos; to &apos;StackManager&apos;&#x0A;- Original project: &apos;5장 연습문제 5번&apos;&#x0A;- Original element: &apos;StringStack&apos;&#x0A;- Renamed element: &apos;StackManager&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StringStack&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{StringStack.java[StringStack" matchStrategy="1" name="StackManager" qualified="false" references="true" similarDeclarations="false" stamp="1682582178261" textual="false" version="1.0"/>
+</session>

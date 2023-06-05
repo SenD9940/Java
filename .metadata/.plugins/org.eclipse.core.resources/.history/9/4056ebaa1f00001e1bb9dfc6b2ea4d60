@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class FileEx2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			BufferedReader in = new BufferedReader(new FileReader("Users\\fbf\\Desktop\\한국교통대학교\\2학년 1학기\\JAVA\\myFile.txt"));
+			String str;
+			while((str = in.readLine()) != null){
+				System.out.println(str);
+			}
+			in.close();
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+	}
+}

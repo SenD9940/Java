@@ -1,0 +1,20 @@
+import java.io.*;
+
+public class FileEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			InputStreamReader isr = new InputStreamReader(System.in);
+			BufferedWriter in = new BufferedWriter(new FileWriter("myFile.txt"));
+			int c = 0;
+			while((c = isr.read()) != -1) {
+				in.write((char)c);
+			}
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

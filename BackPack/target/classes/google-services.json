@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "409767527636",
+    "firebase_url": "https://fbf-send.firebaseio.com",
+    "project_id": "fbf-send",
+    "storage_bucket": "fbf-send.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409767527636:android:8520b792af3282d304e741",
+        "android_client_info": {
+          "package_name": "com.fbf.BackPack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409767527636-4ipsf9u9a4o1hb436rvcmdi15m0qm89m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQYnEoU6Xn2aT9pZcfrGhBxoIVsfdS-KY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409767527636-4ipsf9u9a4o1hb436rvcmdi15m0qm89m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

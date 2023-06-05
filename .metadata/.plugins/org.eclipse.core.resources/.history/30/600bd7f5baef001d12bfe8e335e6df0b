@@ -1,0 +1,31 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+
+public class MyFrame extends JFrame {
+	
+	public MyFrame() {
+		this.setTitle("MouseEvent");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container cp = getContentPane();
+		cp.setLayout(null);
+		JLabel label = new JLabel("hello");
+		label.setBounds(50, 50, 50, 20);
+		cp.add(label);
+		this.setSize(300, 300);
+		this.setResizable(false);
+		this.setLocationRelativeTo(this.getParent());
+		this.setVisible(true);
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyFrame myFrame = new MyFrame();
+	}
+
+}

@@ -1,0 +1,95 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class ThreadEx5 extends JFrame{
+	public ThreadEx5() {
+		this.setTitle("사격 게임");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		GamePanel p = new GamePanel();
+		this.setContentPane(p);
+		this.setSize(300, 300);
+		this.setResizable(false);
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new ThreadEx5();
+	}
+
+}
+
+class GamePanel extends JPanel{
+	TargetThread targetThread;
+	JLabel baseLabel = new JLabel();
+	JLabel bulletLabel = new JLabel();
+	JLabel targetLabel;
+	
+	public GamePanel() {
+		this.setLayout(null);
+		baseLabel.setSize(40, 40);
+		baseLabel.setOpaque(true);
+		baseLabel.setBackground(Color.BLACK);
+		ImageIcon img = new ImageIcon("src/img/chicken.jpeg");
+		targetLabel = new JLabel(img);
+		targetLabel.setSize(50, 50);
+		bulletLabel.setSize(10, 10);
+		bulletLabel.setOpaque(true);
+		bulletLabel.setBackground(Color.RED);
+		this.add(baseLabel);
+		this.add(targetLabel);
+		this.add(bulletLabel);
+	}
+	
+	public void startGame() {
+		baseLabel.setLocation(this.getWidth() / 2-20, this.getHeight() - 40);
+		bulletLabel.setLocation(this.getWidth() / 2-5, this.getHeight() - 50);
+		targetLabel.setLocation(0, 0);
+		targetThread = new TargetThread(targetLabel);
+		targetThread.start();
+		baseLabel.requestFocus();
+		baseLabel.addKeyListener(new KeyAdapter() {
+			BulleThread bulletThread = null;
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyChar() == '\n') {
+					if(bulletThread == null || !bulletThread.isAlive()) {
+						bulletThread = new BulletThread(bulletLabel, targetLabel, targetThread);
+						bulletThrad.start();
+					}
+				}
+			}
+		});
+	}
+	
+	class TargetThread extends Thread{
+		JComponent target;
+		public TargetThread(JComponent target) {
+			this.target = target;
+			target.setLocation(0, 0);
+		}
+		public void run() {
+			int x = target.getX() + 5;
+			int y = target.getY();
+			if(x > GamePanel.this.getWidth()) {
+				target.setLocation(0, 0);
+			}else {
+				target.setLocation(x, y);
+			}try {
+				sleep(20);
+			}catch(InterruptedException e) {
+				target.setLocation(0, 0);
+				try {
+					sleep(500);
+				}catch(InterruptedException e2) {
+					
+				}
+			}
+		}
+	}
+
+	class BulletThread extends Thread{
+		
+	}
+}

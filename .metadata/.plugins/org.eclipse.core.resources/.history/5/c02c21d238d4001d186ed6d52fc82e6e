@@ -1,0 +1,5 @@
+
+public class Person {
+	int id;
+	int name;
+}

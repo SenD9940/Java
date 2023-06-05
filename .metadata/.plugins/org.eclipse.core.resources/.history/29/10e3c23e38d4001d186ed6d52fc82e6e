@@ -1,0 +1,15 @@
+
+public class UpDownCasting {
+
+	public static void print(Person p) {
+		if(p instanceof Person) {
+			System.out.println(p.id + p.name);
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+import java.io.*;
+
+public class FileEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			InputStreamReader isr = new InputStreamReader(System.in);
+			BufferedWriter out = new BufferedWriter(new FileWriter("..\\myFile.txt"));
+			String str = "hello world\n";
+			out.write(str);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

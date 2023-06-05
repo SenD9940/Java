@@ -1,0 +1,10 @@
+
+public class UpDownCasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person s = new Student();
+		Person p = new Professor();
+	}
+
+}

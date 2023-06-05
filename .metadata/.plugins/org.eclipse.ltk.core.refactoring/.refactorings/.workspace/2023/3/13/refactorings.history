@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;4장 연습문제&apos; to &apos;4장 연습문제 1번&apos;&#x0A;- Original element: &apos;4장 연습문제&apos;&#x0A;- Renamed element: &apos;4장 연습문제&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;4장 연습문제&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=4장 연습문제" name="4장 연습문제 1번" references="true" stamp="1680166228560" version="1.0"/>
+</session>

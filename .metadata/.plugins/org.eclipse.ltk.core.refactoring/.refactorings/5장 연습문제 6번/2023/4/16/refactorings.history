@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;GraphicEditor&apos; to &apos;Main&apos;&#x0A;- Original project: &apos;5장 연습문제 6번&apos;&#x0A;- Original element: &apos;GraphicEditor&apos;&#x0A;- Renamed element: &apos;Main&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GraphicEditor&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{GraphicEditor.java[GraphicEditor" matchStrategy="1" name="Main" qualified="false" references="true" similarDeclarations="false" stamp="1681639087042" textual="false" version="1.0"/>
+</session>

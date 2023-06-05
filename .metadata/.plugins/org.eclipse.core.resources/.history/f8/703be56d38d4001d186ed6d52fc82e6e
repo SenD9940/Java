@@ -1,0 +1,25 @@
+
+public class UpDownCasting {
+
+	public static void print(Person p) {
+		if(p instanceof Person) {
+			System.out.println(p.id + p.name);
+		}else if(p instanceof Student) {
+			Student s = (Student)p;
+			System.out.println(s.department);
+		}else if(p instanceof Researcher) {
+			Researcher r = (Researcher)p;
+			System.out.println(r.part);
+		}else {
+			Professor f = (Professor)p;
+			System.out.println(f.subject);
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p = new Professor();
+		p.su
+	}
+
+}
